@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Form Pengisian Data</h1>
+        <div id="form-container">
+            <form id="submit-form">
+                <div class="form-group">
+                    <label for="Nama">Nama</label>
+                    <input type="text" id="Nama" name="Nama" placeholder="Masukkan nama Anda" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="Email">Email</label>
+                    <input type="email" id="Email" name="Email" placeholder="Masukkan email Anda" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="Telepon">Telepon</label>
+                    <input type="tel" id="Telepon" name="Telepon" placeholder="Masukkan nomor telepon">
+                </div>
+                
+                <div class="form-group">
+                    <label for="Pesan">Pesan</label>
+                    <textarea id="Pesan" name="Pesan" rows="4" placeholder="Tulis pesan Anda"></textarea>
+                </div>
+                
+                <button type="submit">Kirim Data</button>
+            </form>
+            <div id="loading" class="hidden">
+                <div class="loader"></div>
+                <p>Mengirim data...</p>
+            </div>
+            <div id="success-message" class="hidden">
+                <p>Terima kasih! Data Anda telah berhasil dikirim.</p>
+                <button id="submit-new" onclick="resetForm()">Kirim data baru</button>
+            </div>
+            <div id="error-message" class="hidden">
+                <p>Maaf, terjadi kesalahan. Silakan coba lagi nanti.</p>
+                <button id="try-again" onclick="resetForm()">Coba lagi</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
