@@ -1,5 +1,5 @@
 // Ganti URL ini dengan URL Web App yang Anda dapatkan dari Google Apps Script
-const scriptURL = 'GANTI_DENGAN_URL_WEB_APP_ANDA';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxwsWTvnNi8vy0dxGAmJBreaQRPi5rlVEYffbU7dKHMUdbnEvqPnVrMDtWiNHIRtT2wJw/exec';
 
 const form = document.getElementById('submit-form');
 const formContainer = document.getElementById('form-container');
